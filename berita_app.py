@@ -6,7 +6,11 @@ from parsers import (
     parse_sketsanews,
     parse_vnews,
     parse_kepripedia,
-    parse_hariankepri
+    parse_hariankepri,
+    parse_seputarkita,
+    parse_zonakepri,
+    parse_ulasan,
+    parse_batampos
 )
 
 # --- UI Configuration ---
