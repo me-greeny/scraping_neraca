@@ -24,7 +24,7 @@ st.sidebar.header("⚙️ Konfigurasi Scraper")
 # Choose portal
 portal = st.sidebar.selectbox(
     "📰 Pilih Portal Berita:",
-    ["Presmedia", "Sketsa News", "Vision News", "KepriPedia", "Harian Kepri"]
+    ["Presmedia", "Sketsa News", "Vision News", "KepriPedia", "Harian Kepri", "Seputar Kita", "Zona Kepri", "Ulasan", "Batampos"]
 )
 
 # Date Range
@@ -54,7 +54,11 @@ if st.sidebar.button("🚀 Mulai Scraping"):
                 "Sketsa News": parse_sketsanews,
                 "Vision News": parse_vnews,
                 "KepriPedia": parse_kepripedia,
-                "Harian Kepri": parse_hariankepri
+                "Harian Kepri": parse_hariankepri,
+                "Seputar Kita": parse_seputarkita,
+                "Zona Kepri": parse_zonakepri,
+                "Ulasan": parse_ulasan,
+                "Batampos": parse_batampos
             }
 
             # Get the correct parser function from the map
