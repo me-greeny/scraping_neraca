@@ -1,0 +1,1427 @@
+Kategori,Uraian
+"Pertanian, Kehutanan, dan Perikanan",
+"Pertanian, Peternakan, Perburuan dan Jasa Pertanian",
+a. Tanaman Pangan,"Padi, jagung, panen, beras, pangan, lahan, gabah, Hama, iklim, sawah, kedelai, tanam, produksi, petani, lumbung"
+b. Tanaman Hortikultura Semusim,"Harga cabai, cabe, bawang merah, bawang putih, sayuran, distribusi, holtikultura, cuaca, pasokan, sayur, kentang, tomat, pasar, produk, kualitas, hama, pesitisida, lahan, pola tanam, tengkulak, bibit, petani"
+c. Perkebunan Semusim,"Tebu, gula, pabrik, tembakau, industri, tekstil, kain, kebun, perkebunan, iklim, kering, pabrik, buruh, lahan, jual, harga, pupuk"
+d. Tanaman Hortikultura Tahunan dan Lainnya,"ekspor buah, manggis, salak, durian, mangga, pasar, buah, buah tropis, buah-buahan, lalat, panen, pascapanen, sentra buah, organik, kebun buah, impor, musim buah, harga, lokal, inovasi"
+e. Perkebunan Tahunan,"Kelapa, sawit, ekspor, karet, kopi, produksi, perkebunan, kebun, pohon, teh, lada, cengkeh, fermentasi, kakao, lahan, produtivitas, petani, perkebunan besar"
+f. Peternakan,"sapi, harga daging, ayam, telur ayam, populasi ternak, susu sapi, pakan ternak, peternak mandiri, peternakan, peternak, rumah potong hewan, kambing, domba, kebutuhan kurban, bibit ternak, hewan, pasokan daging, ayam, unggas, bebek"
+g. Jasa Pertanian dan Perburuan,"sewa abinstan, penyuluhan pertanian, jasa pane, pengolahan lahan, distribusi pupuk, pergudangan, pasca panen, pengendalian hama terpadu, penangkaran hewan buruan, wisata berburu, konservasi satwa, jasa irigasi, asuransi pertanian, kredit usaha rakyat, pengemasan, tanah, pelatihan petani, koperasi unit desa, logistik pertanian, survei lahan"
+Kehutanan dan Penebangan Kayu,"produksi kayu bulat, kayu, hutan, pengusahaan hutan, perhutanan, kehitanan, furnitur, kebakaran hutan, tenaga kerja kehutanan, kayu lapis, karhutla, kertas, batas hutan, reforestasi, penyerapan karbon"
+Perikanan,"perikanan tangkap, perikanan budidaya, udang, produksi tuna, rumput laut, nelayan tradisional, kapal ikan, penangkapan ikan, tambak udang, tambak ikan, pakan ikan, industri pengolahan ikan, konservasi laut, perikanan, cuaca buruk, alat tangkap, budidaya ikan, keramba, kerambah, pasar ikan, apung"
+Pertambangan dan Penggalian,
+"Pertambangan Minyak, Gas dan Panas Bumi","migas, lifting migas, pengeboran, drilling, lepas pantai, offshore, blok migas, eksplorasi, sumur minyak, gas bumi, LPG, Pipa gas, harga minyak, panas bumi, rig pengeboran, seismik, pertamina, subsidi energi, kilang, spbu, energi"
+Pertambangan Batubara dan Lignit,"produksi batubara, harga batubara, tambang, izin usaha pertambangan, ekspor batubara, lignit, antrasit, pascatambang, reklamasi, tongkang, emisi karbon, transisi energi, penambang, debu batubara, cuaca"
+Pertambangan Bijih Logam,"nikel, tembaga, emas, bauksit, timah, bijih besi, smelter, hilirisasi, baterai kendaraan listrik, EV Battery, tambang bawah tanah, freeport, antam, vale, penambangan, harga lomba, limbah tambang, mineral mentah, geokimia, mineral, feronikel"
+Pertambangan dan Penggalian Lainnya,"Galian C, Pasir dan Batu (Sirtu), Bahan Konstruksi
+Batu Kapur (Gamping), Industri Semen, Marmer, Granit, Tanah Liat, Pasir Kuarsa, Izin Galian, Dampak Lingkungan (Amdal), Pajak Mineral Bukan Logam, Tambang Rakyat, Infrastruktur, Aspal, Belerang, Fosfat, Kaolin, Yodium, Garam, Penambangan Pasir Laut, Abrasi, Batu Andesit, Jalan Tol, Proyek Pembangunan"
+Industri Pengolahan,
+Industri Batubara dan Pengilangan Migas,
+a. Industri Batu Bara,
+b. Industri Pengilangan Migas,
+Industri Makanan dan Minuman,"Minyak goreng, tepung terigu, gula, industri susu, makanan kemasan, minuman ringan, air minum dalam kemasan, bahan baku impor, sertifikasi, BPOM, izin edar, SNI, ekspor, makanan beku, frozen food, industri pengalengan, kaleng, mie instan, kopi instan, sachet, saset, bumbu masak, pabrik, pengolahan, permintaan domestik, inflasi pangan, makanan, keamangan pangan"
+Pengolahan Tembakau,"rokok, hasil tembakau, cukai, sigaret, kretek tangan, kretek mesin, pita cukai, pabrik rokok, buruh linting, daun tembakau, kawasan tanpa rokok, regulasi tembakau, tembakau iris, pelinting, iklan rokok, gudang garam, Sampoerna, Djarum"
+Industri Tekstil dan Pakaian Jadi,"Benang, kain, garmen, pakaian jadi, tekstil, kapas, mesin tekstil, buruh pabrik, fesyen, produk fesyen, batik, serat, pewarnaan tekstil, limbah cair, kualitas produk, baju, rok, gaun, gamis"
+"Industri Kulit, Barang dari Kulit dan Alas Kaki","Penyamakan kulit, industri sepatu, alas kaki, tas kulit, jaket kulit, ekspor sepatu, bahan baku kulit, kulit sintetis, pabrik sepatu, Nike, Adidas, Industri Kecil Menengah, kerajinan kulit, sol sepatu, mesin jahit, pameran, penyamakan, aksesoris kulit"
+"Industri Kayu, Barang dari Kayu dan Gabus dan Barang Anyaman dari Bambu, Rotan dan Sejenisnya","Kayu olahan, furnitur, mebel, plywood, legalitas kayu, rotan, anyaman, kerajinan anyaman, bambu, penggergajian kayu, panel kayu, bahan baku kayu, pengrajin, pengecatan, mesin bubut, laminasi, veneer, kayu jati, kayu meranti"
+"Industri Kertas dan Barang dari Kertas, Percetakan dan Reproduksi Media Rekaman","Pulp, bubur kertas, pabrik kertas, percetakan, karton, kertas kemasan, kertas tulis, kertas, pabrik kertas, tinta cetak, mesin cetak penerbitan buku, kemasan makanan, kertas daur ulang, limbah kertas, digitalisasi, kertas domestik, karton gelombang, tisu, grafika, buku pelajaran, bahan baku serat"
+"Industri Kimia, Farmasi dan Obat Tradisional","Industri kimia dasar, pupuk urea, petrokimia, cat, deterjen, farmasi, obat generik, obat paten, bahan baku obat, vaksin, bio farma, kimia farma, jamu, obat tradisional, herbal, BPOM, kosmetik, pestisida, gas industri, plastik, biji plastik, uji klinis, industri sabun, zat aktif"
+"Industri Karet, Barang dari Karet dan Plastik","karet remah, rubber, industri ban, sarung tangan karet, ban, pipa PVC, peralatan rumah tangga, biji plastik, mesin injeksi plastik, daur ulang plastik, karet sintetis, karet alam, pabrik ban, vulkanisasi, karet, selang karet, suku cadang, limbah plastik, kantong plastik, botol plastik PET, SNI, kompon"
+Industri Barang Galian bukan Logam,"Industri semen, klinker, beton siap pakai, keramik, kaca, batu bata, genting, asbes, pabrik semen, infrastruktur, properti, semen, tungku pembakaran, batu kapur, tanah liat, gelas, porselen, sanitasi, debu pabrik, material, toko bangunan"
+Industri Logam Dasar,"besi dan baja, pabrik baja, steel, smelter nikel,  tembaga, aluminium, baja, besi tua, logam mulia"
+"Industri Barang dari Logam, Komputer, Barang Elektronik, Optik dan Peralatan Listrik","Industri Elektronik
+
+Manufaktur Komputer/Laptop
+
+Ponsel (Smartphone)
+
+Peralatan Rumah Tangga (AC/Kulkas)
+
+Komponen Elektronik
+
+Kabel Listrik
+
+Lampu (LED)
+
+Panel Surya
+
+Industri Fabrikasi Logam
+
+Mur dan Baut
+
+Kaleng Kemasan
+
+Rangka Baja
+
+Perakitan (Assembly)
+
+Investasi Asing (PMA)
+
+Kawasan Industri
+
+Impor Komponen
+
+Tenaga Kerja Terampil
+
+Suku Cadang
+
+Merek Lokal vs Global
+
+Standar Efisiensi Energi
+
+Televisi
+
+Lensa Optik
+
+Alat Ukur
+
+TKDN Elektronik
+
+Baterai"
+Industri Mesin dan Perlengkapan YTDL,"Mesin Industri
+
+Mesin Pertanian (Traktor)
+
+Generator Listrik
+
+Motor Listrik
+
+Pompa Air
+
+Kompresor
+
+Alat Berat (Ekskavator)
+
+Mesin Pabrik
+
+Suku Cadang Mesin
+
+Industri Permesinan
+
+Rekayasa (Engineering)
+
+Cetakan (Molding)
+
+Peralatan Konstruksi
+
+Eskalator/Lift
+
+Pendingin Industri
+
+Inovasi Teknologi
+
+Otomatisasi Industri
+
+Robotik
+
+Manufaktur
+
+Kebutuhan Modal
+
+SDM Teknik
+
+Presisi Tinggi
+
+Neraca Perdagangan
+
+Bengkel Bubut
+
+Maintenance (Perawatan)"
+Industri Alat Angkutan,"Industri Otomotif
+
+Pabrik Mobil
+
+Pabrik Motor
+
+Karoseri
+
+Industri Komponen Otomotif
+
+Suku Cadang (Spare Part)
+
+Industri Kapal
+
+Galangan Kapal
+
+Industri Kereta Api (INKA)
+
+Industri Pesawat Terbang (PTDI)
+
+Perakitan Kendaraan (CKD/IKD)
+
+Kendaraan Listrik (EV)
+
+Baterai EV
+
+Gaikindo
+
+Penjualan Mobil/Motor
+
+Ekspor Kendaraan
+
+Rantai Pasok Otomotif
+
+TKDN Otomotif
+
+Standar Emisi
+
+Sasis dan Bodi
+
+Mesin (Engine)
+
+Transmisi
+
+Dok Perkapalan
+
+Infrastruktur Transportasi
+
+Sepeda"
+Industri Furnitur,"Mebel Kayu
+
+Furnitur Rotan
+
+Mebel Logam
+
+Desain Interior
+
+Ekspor Mebel
+
+Pasar Domestik
+
+Kerajinan Ukir
+
+Finishing (Pelapisan)
+
+Pameran Furnitur (IFEX)
+
+IKM Furnitur
+
+Merek Lokal
+
+Kayu Jati/Mahoni
+
+Rangka Furnitur
+
+Knock-down (Bongkar Pasang)
+
+Standar Kualitas Ekspor
+
+Tenaga Kerja Terampil
+
+Bahan Baku
+
+Tren Desain
+
+Showroom
+
+Distribusi
+
+Persaingan (Vietnam/China)
+
+Sertifikasi SVLK
+
+Bantalan/Jok (Upholstery)
+
+Laminasi
+
+Produksi Massal"
+"Industri pengolahan lainnya, jasa reparasi dan pemasangan mesin dan peralatan","Jasa Reparasi Mesin
+
+Instalasi Mesin Industri
+
+Perawatan (Maintenance)
+
+Daur Ulang
+
+Pengolahan Limbah
+
+Kerajinan Tangan
+
+Alat Musik
+
+Peralatan Olahraga
+
+Mainan Anak
+
+Perhiasan (Emas/Perak)
+
+Jasa Las
+
+Kalibrasi Alat Ukur
+
+Modifikasi Mesin
+
+Rekondisi Mesin
+
+Pemasangan Pipa Industri
+
+Instalasi Listrik Pabrik
+
+Bengkel
+
+Teknisi
+
+Suku Cadang Pengganti
+
+Kontrak Servis
+
+Ekonomi Sirkular
+
+Pengolahan Sampah Plastik
+
+Jasa Fabrikasi
+
+Peralatan Medis
+
+Outsourcing Teknisi"
+Pengadaan Listrik dan Gas,
+Ketenagalistrikan,"PLN (Perusahaan Listrik Negara)
+
+Pembangkit Listrik (PLTU, PLTA, PLTS)
+
+Tarif Dasar Listrik (TDL)
+
+Subsidi Listrik
+
+Rasio Elektrifikasi
+
+Transmisi
+
+Gardu Induk
+
+Distribusi
+
+Kilowatt-jam (kWh)
+
+Megawatt (MW)
+
+Pemadaman (Blackout)
+
+Jaringan Listrik
+
+Energi Baru Terbarukan (EBT)
+
+Pembangkit Listrik Swasta (IPP)
+
+Token Listrik
+
+Meteran Listrik
+
+Konsumsi Listrik
+
+PLTS Atap
+
+Bauran Energi
+
+Stasiun Pengisian Kendaraan Listrik Umum (SPKLU)
+
+Tegangan Tinggi
+
+Efisiensi Energi
+
+Investasi Ketenagalistrikan
+
+Over-supply
+
+"
+Pengadaan Gas dan Produksi Es,"PGN (Perusahaan Gas Negara)
+
+Jaringan Gas (Jargas)
+
+Gas Bumi
+
+Distribusi Gas
+
+SPBG (Stasiun Pengisian Bahan Bakar Gas)
+
+CNG (Compressed Natural Gas)
+
+Pipa Gas
+
+Harga Gas Industri
+
+Industri Es Balok
+
+Cold Storage
+
+Es Kristal
+
+Pabrik Es
+
+Pasokan Gas
+
+Regulator Gas
+
+Tabung Gas
+
+Infrastruktur Gas
+
+Konversi BBM ke Gas
+
+Meteran Gas
+
+Kontrak Jual Beli Gas
+
+Industri Perikanan (Pengguna Es)
+
+Transportasi Gas
+
+Industri Makanan (Pengguna Es)
+
+Keamanan Jaringan Pipa
+
+LNG (Liquefied Natural Gas)
+
+Gas Rumah Tangga"
+"Pengadaan Air, Pengelolaan Sampah, Limbah dan Daur Ulang","PDAM (Perusahaan Daerah Air Minum)
+
+Air Bersih
+
+Tarif Air
+
+Sanitasi
+
+Pengelolaan Sampah
+
+Tempat Pembuangan Akhir (TPA)
+
+Bank Sampah
+
+Daur Ulang (Recycle)
+
+Limbah Domestik
+
+Limbah B3 (Bahan Berbahaya dan Beracun)
+
+IPAL (Instalasi Pengolahan Air Limbah)
+
+Truk Sampah
+
+Petugas Kebersihan
+
+Reduce, Reuse, Recycle (3R)
+
+Ekonomi Sirkular
+
+Sampah Plastik
+
+Retribusi Sampah
+
+Sumber Daya Air
+
+Polusi Air
+
+Kompos
+
+Incinerator
+
+Pengelolaan Limbah Industri
+
+Krisis Air Bersih
+
+Saluran Pipa
+
+Meteran Air"
+Konstruksi,"Proyek Infrastruktur
+
+Jalan Tol
+
+Gedung
+
+Jembatan
+
+Kontraktor
+
+BUMN Karya (Waskita, Adhi, dsb.)
+
+Tender Proyek
+
+Material Bangunan (Semen, Baja)
+
+Tenaga Kerja Konstruksi
+
+Alat Berat
+
+Arsitek
+
+Insinyur Sipil
+
+Properti
+
+Apartemen
+
+Perumahan
+
+Keselamatan Kerja (K3)
+
+Analisis Mengenai Dampak Lingkungan (AMDAL)
+
+Anggaran Proyek (RAB)
+
+Sertifikat Laik Fungsi (SLF)
+
+Investasi Konstruksi
+
+Ibu Kota Nusantara (IKN)
+
+Bandara
+
+Pelabuhan
+
+Real Estate
+
+Desain dan Bangun (Design and Build)"
+Perdagangan Besar dan Eceran; Reparasi Mobil dan Sepeda Motor,
+"Perdagangan Mobil, Sepeda Motor dan Reparasinya","Dealer Mobil/Motor
+
+Showroom
+
+Penjualan Otomotif
+
+Gaikindo (Mobil)/AISI (Motor)
+
+Mobil Bekas
+
+Bengkel Resmi
+
+Bengkel Umum
+
+Suku Cadang (Spare Part)
+
+Aksesoris Kendaraan
+
+Leasing (Perusahaan Pembiayaan)
+
+Kredit Kendaraan
+
+Pameran Otomotif (GIIAS, IIMS)
+
+Servis Berkala
+
+Ganti Oli
+
+Montir
+
+Asuransi Kendaraan
+
+Modifikasi
+
+Test Drive
+
+Pasar Otomotif
+
+Inden
+
+Sales Otomotif
+
+Pajak Kendaraan Bermotor
+
+Karoseri
+
+Impor Kendaraan (CBU)
+
+Perakitan Lokal (CKD)"
+"Perdagangan Besar dan Eceran, Bukan Mobil dan Sepeda Motor","Grosir
+
+Distributor
+
+Ritel Modern
+
+Supermarket/Minimarket
+
+Pasar Tradisional
+
+Toko Kelontong
+
+E-commerce/Marketplace
+
+Aprindo
+
+Daya Beli Konsumen
+
+Inflasi
+
+Indeks Penjualan Ritel
+
+Barang Konsumsi (FMCG)
+
+Pusat Perbelanjaan (Mal)
+
+Stok Barang (Inventaris)
+
+Rantai Pasok
+
+Logistik
+
+Diskon/Promosi
+
+Pedagang
+
+Omzet Penjualan
+
+Warung
+
+Agen
+
+Pusat Grosir
+
+HET (Harga Eceran Tertinggi)
+
+Perilaku Konsumen
+
+Pemasok"
+Angkutan Rel,"PT KAI
+
+Kereta Api Jarak Jauh
+
+KRL Commuter Line
+
+MRT Jakarta / LRT
+
+Stasiun Kereta
+
+Tiket Kereta
+
+Rel Ganda
+
+Gerbong
+
+Lokomotif
+
+Masinis
+
+Logistik Kereta Barang
+
+Kereta Cepat
+
+Perlintasan Sebidang
+
+Tarif Kereta
+
+Tingkat Okupansi
+
+Depo Kereta
+
+Subsidi (PSO)
+
+Elektrifikasi Jalur
+
+Sinyal Perkeretaapian
+
+Sarana dan Prasarana
+
+Angkutan Batu Bara
+
+Kelas Eksekutif/Ekonomi
+
+Jadwal Perjalanan
+
+Keselamatan Perkeretaapian
+
+Aksesibilitas Stasiun"
+Angkutan Darat,"Bus AKAP/AKDP
+
+Terminal Bus
+
+Transportasi Online (Gojek/Grab)
+
+Taksi
+
+Truk Logistik
+
+Organda
+
+Jembatan Timbang
+
+Tarif Angkutan
+
+Trayek
+
+Uji KIR
+
+Kemacetan Lalu Lintas
+
+Arus Mudik
+
+Angkutan Barang
+
+Sopir/Kondektur
+
+Jalan Tol/Rest Area
+
+Over Dimension Over Loading (ODOL)
+
+Keselamatan Jalan Raya
+
+Angkutan Kota (Angkot)
+
+Jasa Travel
+
+SIM (Surat Izin Mengemudi)
+
+Terminal Barang
+
+Angkutan Pariwisata
+
+Bajaj/Ojek Pangkalan
+
+Sistem Ganjil-Genap
+
+Terminal Terpadu"
+Angkutan Laut,"Pelabuhan
+
+PT Pelni
+
+Kapal Penumpang
+
+Kapal Kargo/Kontainer
+
+Tol Laut
+
+Peti Kemas
+
+Bongkar Muat
+
+Pelayaran Internasional
+
+Syahbandar
+
+Bea Cukai
+
+Dwelling Time
+
+Kapal Tanker
+
+Kapal Ro-Ro
+
+Anak Buah Kapal (ABK)
+
+Logistik Maritim
+
+Biaya Pengapalan (Freight Cost)
+
+Transportasi Intermoda
+
+Pelabuhan Hub
+
+INSA (Indonesian National Shipowners' Association)
+
+Industri Galangan Kapal
+
+Navigasi Laut
+
+Keselamatan Pelayaran
+
+Rute Pelayaran
+
+Kargo Curah
+
+Agensi Perkapalan"
+Angkutan Sungai Danau dan Penyeberangan,"ASDP Indonesia Ferry
+
+Kapal Feri
+
+Dermaga
+
+Pelabuhan Penyeberangan
+
+Merak - Bakauheni
+
+Transportasi Sungai
+
+Getek/Perahu Motor
+
+Tiket Feri
+
+Angkutan Kendaraan
+
+Keselamatan Penyeberangan
+
+Jadwal Feri
+
+Cuaca Buruk
+
+Danau Toba
+
+Wisata Air
+
+Perairan Pedalaman
+
+Antrean Kendaraan
+
+Pelampung
+
+Kapasitas Muatan
+
+Angkutan Barang
+
+Penumpang Pejalan Kaki
+
+Jembatan Ponton
+
+Angkutan Logistik
+
+Sarana Prasarana
+
+Otoritas Pelabuhan
+
+Tarif Penyeberangan"
+Angkutan Udara,"Maskapai Penerbangan
+
+Bandara (Airport)
+
+Angkasa Pura I / II
+
+Tiket Pesawat
+
+Kargo Udara
+
+Pilot/Pramugari
+
+Menara Kontrol (ATC)
+
+Jadwal Penerbangan
+
+Keterlambatan (Delay)
+
+Bagasi
+
+Tingkat Okupansi Pesawat
+
+Rute Domestik/Internasional
+
+Harga Avtur
+
+Keamanan Penerbangan
+
+Navigasi Udara (AirNav)
+
+INACA
+
+Industri Dirgantara
+
+Asuransi Perjalanan
+
+Pajak Bandara (PSC)
+
+Check-in Online
+
+Pesawat Komersial
+
+Ground Handling
+
+Slot Penerbangan
+
+Penerbangan Perintis
+
+Terminal Penumpang"
+"Pergudangan dan Jasa Penunjang Angkutan, Pos dan Kurir","Gudang (Warehouse)
+
+Logistik
+
+Rantai Dingin (Cold Storage)
+
+Manajemen Inventaris
+
+Pos Indonesia
+
+Jasa Kurir (JNE, Tiki, SiCepat)
+
+Ekspedisi
+
+Resi Pengiriman (Tracking)
+
+Last-mile Delivery
+
+E-commerce Fulfillment
+
+Freight Forwarding
+
+Pusat Sortir (Sorting Center)
+
+Armada Pengiriman
+
+Cash on Delivery (COD)
+
+Sistem Manajemen Gudang (WMS)
+
+Jasa Kepabeanan (PPJK)
+
+Ongkos Kirim
+
+Forklift
+
+Palet
+
+Agregasi Kargo
+
+Stasiun Karantina
+
+Tol Laut (Aspek Penunjang)
+
+Agen Pengiriman
+
+Pengemasan (Packaging)
+
+Surat dan Paket"
+Penyediaan Akomodasi dan Makan Minum,
+Penyediaan Akomodasi,"Hotel
+
+PHRI
+
+Tingkat Okupansi (Tingkat Hunian Kamar)
+
+Villa/Resor
+
+Homestay/Guest House
+
+Online Travel Agent (OTA)
+
+Reservasi/Booking
+
+Check-in/Check-out
+
+Industri Perhotelan
+
+Pariwisata
+
+MICE (Meeting, Incentive, Convention, Exhibition)
+
+Klasifikasi Bintang Hotel
+
+Housekeeping
+
+Resepsionis
+
+Tarif Kamar
+
+Pajak Hotel
+
+Musim Liburan (Peak Season)
+
+Fasilitas Hotel
+
+Layanan Kamar (Room Service)
+
+Losmen
+
+Hostel
+
+Apartemen Harian
+
+Manajemen Properti
+
+Wisatawan Mancanegara/Domestik
+
+Ulasan Hotel (Review)"
+Penyediaan Makan Minum,"Restoran/Rumah Makan
+
+Kafe
+
+Warung
+
+Katering/Jasa Boga
+
+Food Court
+
+Chef/Koki
+
+Industri Kuliner
+
+Wisata Kuliner
+
+Layanan Pesan Antar (Delivery)
+
+Dapur (Kitchen)
+
+Sertifikasi Halal
+
+Pajak Restoran (PB1)
+
+Izin Usaha Kuliner
+
+Waralaba (Franchise)
+
+Bar/Bartender
+
+Standar Kebersihan
+
+Bahan Baku Makanan
+
+Pemasok (Supplier)
+
+Menu
+
+Pelayan (Waiter/Waitress)
+
+Gerai Makanan Cepat Saji
+
+Pujasera
+
+Minuman Kemasan
+
+Kedai Kopi
+
+Ulasan Kuliner"
+Informasi dan Komunikasi,"Operator Seluler (Telkomsel, XL, Indosat)
+
+Jaringan 4G/5G
+
+Internet Service Provider (ISP)
+
+Fiber Optik
+
+Menara BTS
+
+Pusat Data (Data Center)
+
+Penyiaran (TV/Radio)
+
+Media Online/Portal Berita
+
+Produksi Film/Sinetron
+
+Periklanan (Advertising)
+
+Kominfo
+
+Startup Digital
+
+Aplikasi Mobile
+
+Ekonomi Digital
+
+Media Sosial
+
+Trafik Data
+
+Kecepatan Internet
+
+Keamanan Siber
+
+Over-the-Top (OTT)
+
+Literasi Digital
+
+Konten Kreator
+
+Telekomunikasi
+
+Satelit
+
+Software Development
+
+Cloud Computing"
+Jasa Keuangan dan Asuransi,
+Jasa Perantara Keuangan,"Perbankan (Bank Umum)
+
+Suku Bunga Acuan (BI Rate)
+
+Kredit/Pinjaman
+
+Kredit Usaha Rakyat (KUR)
+
+Tabungan/Deposito
+
+ATM/Mobile Banking
+
+OJK (Otoritas Jasa Keuangan)
+
+LPS (Lembaga Penjamin Simpanan)
+
+Transfer Dana (BI-FAST)
+
+Kredit Macet (NPL)
+
+Perbankan Syariah
+
+BPR (Bank Perkreditan Rakyat)
+
+Lembaga Pembiayaan
+
+Kartu Kredit/Debit
+
+Laba Bersih Bank"
+Asuransi dan Dana Pensiun,"Asuransi Jiwa/Kesehatan
+
+Asuransi Umum
+
+BPJS Ketenagakerjaan/Kesehatan
+
+Dana Pensiun
+
+Taspen/Asabri
+
+Premi Asuransi
+
+Klaim
+
+Polis Asuransi
+
+Agen Asuransi
+
+Aktuaris
+
+Investasi Dana Pensiun
+
+Jaminan Hari Tua (JHT)
+
+Asuransi Syariah (Takaful)
+
+Reasuransi
+
+Literasi Asuransi"
+Jasa Keuangan Lainnya,"Pegadaian
+
+Modal Ventura
+
+Fintech Lending (Pinjol)
+
+Pasar Modal
+
+Bursa Efek Indonesia (BEI)
+
+Perusahaan Sekuritas
+
+Saham/Reksadana/Obligasi
+
+Manajer Investasi
+
+IPO (Initial Public Offering)
+
+Investor
+
+Trading Saham
+
+Crowdfunding
+
+Koperasi Simpan Pinjam
+
+Anjak Piutang
+
+Sewa Guna Usaha (Leasing)"
+Jasa Penunjang Keuangan,"Jasa Penilaian (Appraisal)
+
+Konsultan Keuangan
+
+Kustodian
+
+Wali Amanat
+
+Biro Kredit
+
+Payment Gateway
+
+Uang Elektronik (e-money)
+
+QRIS
+
+Mesin EDC
+
+Agen Laku Pandai
+
+Kliring (SKNBI)
+
+Real-Time Gross Settlement (RTGS)
+
+Blokir Rekening
+
+Inkaso
+
+Letter of Credit (L/C)"
+Real Estate,"Developer/Pengembang Properti
+
+Perumahan
+
+Apartemen
+
+Kawasan Industri
+
+Perkantoran
+
+Pusat Perbelanjaan (Mal)
+
+Harga Properti
+
+KPR (Kredit Pemilikan Rumah)
+
+Agen Properti
+
+Sewa Properti
+
+NJOP (Nilai Jual Objek Pajak)
+
+PBB (Pajak Bumi dan Bangunan)
+
+Sertifikat Tanah (SHM/HGB)
+
+Pasar Properti
+
+Investasi Properti
+
+REI (Real Estate Indonesia)
+
+Pemasaran Properti
+
+Tata Ruang (RTRW)
+
+Izin Mendirikan Bangunan (IMB)
+
+Rumah Subsidi (FLPP)
+
+Lahan (Land Bank)
+
+Indeks Harga Properti
+
+Kondominium Hotel (Kondotel)
+
+Properti Komersial
+
+Manajemen Gedung"
+Jasa Perusahaan,"Jasa Hukum/Advokat
+
+Akuntan Publik
+
+Konsultan Pajak/Manajemen
+
+Jasa Arsitektur/Rekayasa
+
+Periklanan
+
+Riset Pasar
+
+Jasa Ketenagakerjaan (Outsourcing)
+
+Jasa Kebersihan (Cleaning Service)
+
+Jasa Keamanan (Satpam)
+
+Jasa Komputer dan TI
+
+Riset dan Pengembangan (R&D)
+
+Jasa Profesional
+
+Alih Daya (BPO)
+
+Headhunter/Rekrutmen
+
+Desain Grafis
+
+Event Organizer (EO)
+
+Notaris/PPAT
+
+Jasa Penerjemah
+
+Jasa Penagihan (Debt Collector)
+
+Call Center
+
+Jasa Administrasi Kantor
+
+Sewa Kantor (Virtual/Serviced Office)
+
+Jasa Konsultasi Bisnis
+
+Jasa Survei
+
+Hubungan Masyarakat (Public Relations)"
+"Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib","Aparatur Sipil Negara (ASN/PNS)
+
+Gaji Pegawai
+
+Belanja Pemerintah
+
+APBN/APBD
+
+Kementerian/Lembaga
+
+TNI/Polri
+
+Alutsista
+
+Pertahanan Negara
+
+Pelayanan Publik
+
+Direktorat Jenderal Pajak/Bea Cukai
+
+BPJS (Kesehatan/Ketenagakerjaan)
+
+Jaminan Sosial
+
+Administrasi Kependudukan (Dukcapil)
+
+Pemilu/Pilkada
+
+Anggaran Pertahanan
+
+Penegakan Hukum
+
+Pengadilan/Kejaksaan
+
+Diplomasi Luar Negeri
+
+Tata Kelola Pemerintahan
+
+Badan Pusat Statistik (BPS)
+
+Pemerintah Daerah (Pemda)
+
+Badan Usaha Milik Negara (BUMN)
+
+Lembaga Pemerintah Non-Kementerian (LPNK)
+
+Dana Pensiun (Taspen/Asabri)
+
+Keamanan Nasional"
+Jasa Pendidikan,"Sekolah (SD, SMP, SMA/SMK)
+
+Perguruan Tinggi (Universitas)
+
+Guru/Dosen
+
+Kurikulum Merdeka
+
+Ujian Sekolah/SNBT
+
+Biaya Pendidikan (SPP)
+
+Dana BOS
+
+Kemendikbudristek
+
+Sekolah Swasta/Negeri
+
+Pendidikan Vokasi
+
+Beasiswa
+
+Akreditasi
+
+Riset Ilmiah/Publikasi
+
+Bimbingan Belajar
+
+Platform Edu-tech
+
+Sarana Prasarana Pendidikan
+
+Wajib Belajar
+
+Angka Partisipasi Kasar (APK)
+
+Pondok Pesantren
+
+Pendidikan Anak Usia Dini (PAUD)
+
+Pelatihan Kerja
+
+Program Magang
+
+Perpustakaan
+
+Kelulusan/Wisuda
+
+Ikatan Alumni"
+Jasa Kesehatan dan Kegiatan Sosial,"Rumah Sakit
+
+Puskesmas
+
+Klinik
+
+Dokter/Perawat/Bidan
+
+Apotek
+
+Industri Farmasi (Obat)
+
+BPJS Kesehatan
+
+Alat Kesehatan
+
+Pasien
+
+Angka Harapan Hidup
+
+Penanganan Stunting
+
+Program Imunisasi
+
+Layanan Gawat Darurat (IGD)
+
+Kementerian Kesehatan
+
+Ikatan Dokter Indonesia (IDI)
+
+Panti Asuhan/Panti Jompo
+
+Kegiatan Amal/Donasi
+
+Lembaga Swadaya Masyarakat (LSM)
+
+Bantuan Sosial
+
+Penanggulangan Bencana (BNPB)
+
+Donor Darah (PMI)
+
+Relawan Sosial
+
+Rehabilitasi (Narkoba, Sosial)
+
+Kesehatan Ibu dan Anak (KIA)
+
+Vaksinasi"
+Jasa lainnya,"Salon Kecantikan/Barbershop
+
+Spa/Pijat Refleksi
+
+Jasa Binatu (Laundry)
+
+Jasa Reparasi Elektronik
+
+Studio Fotografi
+
+Jasa Hiburan (Bioskop, Konser)
+
+Organisasi Kemasyarakatan
+
+Kesenian dan Kreativitas
+
+Museum/Galeri Seni
+
+Kebun Binatang/Taman Safari
+
+Jasa Pernikahan (Wedding Organizer)
+
+Jasa Pemakaman
+
+Asisten Rumah Tangga (ART)
+
+Jasa Perawatan Hewan (Pet Shop/Grooming)
+
+Pusat Kebugaran (Gym)
+
+Reparasi Komputer/Ponsel
+
+Jasa Penerjemah
+
+Jasa Pengetikan
+
+Organisasi Politik
+
+Jasa Parkir
+
+Toilet Umum
+
+Aktivitas Keagamaan
+
+Bengkel Las
+
+Cuci Kendaraan
+
+Jasa Perawatan Taman"
+,

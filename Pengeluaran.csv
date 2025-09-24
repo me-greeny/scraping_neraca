@@ -1,0 +1,983 @@
+Kategori,Uraian
+1. Pengeluaran Konsumsi Rumah Tangga (1.a. s/d 1.l.),
+1.a. Makanan dan Minuman Non Beralkohol,"Belanja Bahan Pokok
+
+Pengeluaran Pangan
+
+Harga Beras/Daging/Telur
+
+Konsumsi Rumah Tangga
+
+Belanja di Pasar/Supermarket
+
+Pembelian Sayur dan Buah
+
+Minyak Goreng
+
+Gula Pasir
+
+Mie Instan
+
+Air Minum Kemasan (AMDK)
+
+Belanja Kopi/Teh/Susu
+
+Makanan Olahan
+
+Bumbu Masak
+
+Roti dan Sereal
+
+Ikan Segar/Olahan
+
+Inflasi Pangan (Volatile Food)
+
+Daya Beli Makanan
+
+Pengeluaran Jajanan
+
+Makan di Warung/Restoran
+
+Stok Makanan Rumah
+
+Keranjang Pangan
+
+Anggaran Belanja Dapur
+
+Permintaan Pangan
+
+Belanja Harian/Bulanan
+
+Makanan Siap Saji"
+1.b. Minuman Beralkohol dan Rokok,"Belanja Rokok
+
+Konsumsi Tembakau
+
+Kenaikan Harga Rokok
+
+Cukai Hasil Tembakau (CHT)
+
+Pembelian Minuman Beralkohol
+
+Bir/Anggur (Wine)
+
+Pengeluaran untuk Hiburan
+
+Vape/Rokok Elektrik
+
+Cerutu
+
+Tembakau Linting
+
+Pembelian di Minimarket
+
+Peraturan Minuman Beralkohol
+
+Pengeluaran Non-Esensial
+
+Pajak Rokok
+
+Pengeluaran Kafe/Bar
+
+Minuman Keras
+
+Belanja Tembakau
+
+Konsumsi per Kapita
+
+Pembatasan Usia
+
+Anggaran Rokok
+
+Tembakau Iris
+
+Minuman Tradisional Beralkohol
+
+Import Minuman Alkohol
+
+Pengeluaran Sosial
+
+Harga Jual Eceran (HJE)"
+1.c. Pakaian,"Belanja Pakaian/Baju
+
+Pembelian Sepatu/Sandal
+
+Pengeluaran Fesyen
+
+Pakaian Jadi
+
+Belanja Baju Lebaran
+
+Pakaian Anak-anak
+
+Aksesoris Fesyen (Tas, Jam)
+
+Belanja Online (E-commerce)
+
+Belanja di Mal/Departement Store
+
+Diskon/Potongan Harga
+
+Pakaian Bekas (Thrifting)
+
+Kebutuhan Sandang
+
+Pakaian Kerja
+
+Alas Kaki
+
+Merek Lokal/Internasional
+
+Pengeluaran Gaya Hidup
+
+Pembelian Tekstil/Kain
+
+Pakaian Olahraga
+
+Ongkos Jahit
+
+Permintaan Pakaian
+
+Belanja Impulsif
+
+Tren Fesyen
+
+Pakaian Dalam
+
+Seragam
+
+Jaket/Pakaian Luar"
+"1.d. Perumahan, Air, Listrik, Gas dan Bahan Bakar Lainnya","Bayar Tagihan Listrik
+
+Token Listrik (Prabayar)
+
+Tagihan Air PDAM
+
+Sewa Rumah/Kontrakan
+
+Cicilan KPR
+
+Pembelian Gas LPG
+
+Biaya Lingkungan (Iuran Warga)
+
+Pajak Bumi dan Bangunan (PBB)
+
+Biaya Perawatan Rumah
+
+Harga Properti
+
+Tarif Dasar Listrik (TDL)
+
+Jaringan Gas Rumah Tangga
+
+Bahan Bakar Minyak (BBM)
+
+Biaya Indekos
+
+Iuran Pengelolaan Lingkungan (IPL) Apartemen
+
+Retribusi Sampah
+
+Subsidi Energi
+
+Pengeluaran Utilitas
+
+Biaya Renovasi Kecil
+
+Kayu Bakar/Arang
+
+Pembelian Rumah
+
+Tagihan Telepon Rumah
+
+Biaya Kebersihan
+
+Pengeluaran Pokok
+
+Sumber Penerangan"
+"1.e. Perabot, Peralatan rumahtangga dan Pemeliharaan Rutin Rumah","Pembelian Furnitur
+
+Peralatan Elektronik (TV, Kulkas)
+
+Pembelian AC/Kipas Angin
+
+Mesin Cuci
+
+Alat Masak (Kompor, Panci)
+
+Perlengkapan Makan/Minum
+
+Tekstil Rumah Tangga (Sprei, Gorden)
+
+Jasa Asisten Rumah Tangga (ART)
+
+Jasa Laundry
+
+Pembelian Cat Rumah
+
+Perkakas
+
+Barang Pecah Belah
+
+Hiasan/Dekorasi Rumah
+
+Produk Pembersih
+
+Jasa Tukang/Reparasi
+
+Pembelian Lemari
+
+Peralatan Dapur
+
+Lampu
+
+Barang Habis Pakai
+
+Perawatan Taman
+
+Pembelian Kasur
+
+Rak Penyimpanan
+
+Jasa Sedot WC
+
+Perbaikan Kecil
+
+Peralatan Kebersihan"
+1.f. Kesehatan,"Biaya Berobat
+
+Pembelian Obat di Apotek
+
+Iuran BPJS Kesehatan
+
+Biaya Rawat Inap/Jalan
+
+Konsultasi Dokter
+
+Pembelian Kacamata
+
+Vitamin dan Suplemen
+
+Biaya Cek Laboratorium
+
+Biaya Persalinan
+
+Perawatan Gigi
+
+Asuransi Kesehatan Swasta
+
+Alat Kesehatan Pribadi
+
+Pengeluaran Medis
+
+Obat Herbal/Tradisional
+
+Fisioterapi/Terapi
+
+Medical Check-Up
+
+Vaksinasi
+
+Skincare/Perawatan Kulit
+
+Biaya Psikiater/Psikolog
+
+Produk P3K
+
+Belanja Popok Lansia
+
+Jasa Perawat Rumahan
+
+Biaya Operasi
+
+Alat Bantu Dengar
+
+Tes Kehamilan"
+1.g. Transportasi/Angkutan,"Pembelian Bensin (Pertalite/Pertamax)
+
+Tarif Transportasi Online
+
+Tiket Kereta Api/Bus
+
+Pembayaran Jalan Tol
+
+Biaya Parkir
+
+Servis Rutin Kendaraan
+
+Cicilan Mobil/Motor
+
+Pembelian Kendaraan Baru/Bekas
+
+Tiket Pesawat
+
+Pajak Kendaraan Bermotor (PKB)
+
+Ongkos Angkot/Transportasi Umum
+
+Pembelian Suku Cadang
+
+Ganti Oli
+
+Ongkos Ojek
+
+Asuransi Kendaraan
+
+Biaya Uji KIR
+
+Tambal Ban
+
+Tarif Taksi
+
+Biaya Perpanjangan SIM/STNK
+
+Pembelian Ban
+
+Ongkos Mudik
+
+Biaya Transportasi Harian
+
+Sewa Kendaraan
+
+Tiket Kapal Feri
+
+Biaya Derek"
+1.h. Komunikasi,"Pembelian Pulsa
+
+Paket Data Internet
+
+Tagihan WiFi/Internet Rumah
+
+Pembelian Ponsel/Smartphone
+
+Langganan TV Kabel/Streaming
+
+Pembelian Aksesoris HP
+
+Biaya Perbaikan Gadget
+
+Tagihan Telepon Pascabayar
+
+Voucher Game Online
+
+Pembelian Koran/Majalah
+
+Biaya Kirim Paket (Pos/Kurir)
+
+Pembelian Laptop/Komputer
+
+Kartu Perdana
+
+Pembelian Modem
+
+Biaya Panggilan Telepon
+
+Langganan Konten Digital
+
+Top-up E-wallet
+
+Biaya Peringatan (Alert) Perbankan
+
+Belanja di Warnet
+
+Pembelian Perangkat Lunak
+
+Pembelian Perangkat Jaringan (Router)
+
+Iuran Telepon
+
+Biaya Komunikasi Kantor
+
+Pengeluaran Digital
+
+Pulsa Listrik (dilihat sbg komunikasi digital"
+1.i. Rekreasi dan Budaya,"Tiket Nonton Bioskop
+
+Biaya Liburan/Pariwisata
+
+Tiket Masuk Tempat Wisata
+
+Langganan Layanan Hiburan
+
+Pembelian Buku
+
+Tiket Konser/Pertunjukan Seni
+
+Pengeluaran untuk Hobi
+
+Pembelian Peralatan Olahraga
+
+Pembelian Mainan Anak
+
+Biaya Keanggotaan Klub/Gym
+
+Perawatan Hewan Peliharaan
+
+Pengeluaran untuk Pesta/Acara
+
+Pembelian Alat Musik
+
+Berlangganan Majalah
+
+Jasa Fotografi/Videografi
+
+Biaya Karaoke
+
+Pembelian Tanaman Hias
+
+Pengeluaran Kegiatan Outdoor
+
+Biaya Masuk Museum/Galeri
+
+Koleksi Barang Antik/Hobi
+
+Pembelian Konsol Game
+
+Sewa Lapangan Olahraga
+
+Biaya Tamasya
+
+Kunjungan Taman Hiburan
+
+Belanja Barang Seni"
+1.j. Pendidikan,"Biaya SPP Sekolah/Kuliah
+
+Uang Pangkal Masuk
+
+Pembelian Buku Pelajaran
+
+Alat Tulis Kantor (ATK)
+
+Pembelian Seragam Sekolah
+
+Biaya Les/Bimbingan Belajar
+
+Biaya Kursus Keterampilan/Online
+
+Biaya Wisuda
+
+Uang Saku Anak Sekolah
+
+Iuran Komite Sekolah
+
+Biaya Praktikum/Penelitian
+
+Pengeluaran Ekstrakurikuler
+
+Transportasi ke Sekolah
+
+Biaya Studi Tur
+
+Pembelian Laptop untuk Belajar
+
+Biaya Pendaftaran Sekolah
+
+Iuran OSIS/Kegiatan Mahasiswa
+
+Biaya Fotokopi/Cetak Tugas
+
+Pengeluaran KKN/Magang
+
+Biaya Seminar/Workshop
+
+Pembelian Kamus/Buku Referensi
+
+Pendidikan Anak Usia Dini (PAUD)
+
+Iuran Perpustakaan
+
+Biaya Asrama/Indekos Pelajar
+
+Seragam Olahraga"
+1.k. Penginapan dan Hotel,"Biaya Menginap di Hotel
+
+Sewa Villa/Apartemen Harian
+
+Reservasi Akomodasi
+
+Pengeluaran Perjalanan Wisata
+
+Tarif Kamar Hotel
+
+Losmen/Hostel
+
+Guest House/Wisma
+
+Pengeluaran Perjalanan Dinas
+
+Biaya Makan di Hotel
+
+Pajak Hotel dan Restoran
+
+Pemesanan via Online Travel Agent (OTA)
+
+Biaya Layanan (Service Charge)
+
+Resor
+
+Motel
+
+Fasilitas Tambahan Hotel
+
+Akomodasi Mudik
+
+Biaya Transit
+
+Penginapan Syariah
+
+Sewa Tempat untuk Acara
+
+Promo/Diskon Hotel
+
+Ulasan Penginapan
+
+Biaya Karantina (jika ada)
+
+Check-in/Check-out
+
+Deposit Hotel
+
+Pengeluaran Akomodasi"
+1.l. Barang Pribadi dan Jasa Perorangan,"Perawatan Diri (Salon/Barbershop)
+
+Pembelian Kosmetik/Skincare
+
+Jasa Binatu (Laundry)
+
+Pembelian Perhiasan (Emas)
+
+Pembelian Jam Tangan
+
+Biaya Administrasi Bank
+
+Jasa Konsultasi Hukum/Notaris
+
+Biaya Pernikahan
+
+Jasa Pemakaman
+
+Perlengkapan Bayi (Popok, Susu Formula)
+
+Potong Rambut
+
+Perawatan Spa/Pijat
+
+Ongkos Jahit Pakaian
+
+Pembelian Tas/Dompet
+
+Parfum
+
+Jasa Perbaikan (Sepatu, Jam)
+
+Asuransi Jiwa
+
+Jasa Keuangan Non-Bank
+
+Biaya Keanggotaan Organisasi
+
+Jasa Penitipan Anak
+
+Perlengkapan Ibadah
+
+Jasa Fotokopi
+
+Pas Foto
+
+Biaya Tolilet Umum
+
+Cincin Kawin"
+2. Pengeluaran Konsumsi LNPRT,"Donasi Kemanusiaan
+
+Sumbangan Bencana Alam
+
+Zakat, Infaq, Sedekah
+
+Iuran Organisasi Keagamaan
+
+Biaya Operasional Yayasan Sosial
+
+Anggaran Kegiatan LSM/NGO
+
+Iuran Keanggotaan Partai Politik
+
+Iuran Organisasi Profesi (IDI, PWI, dsb)
+
+Bantuan untuk Panti Asuhan/Jompo
+
+Dana untuk Lembaga Pendidikan Nirlaba
+
+Pengeluaran Tempat Ibadah
+
+Program Bantuan Sosial Swasta
+
+Biaya Advokasi Publik
+
+Dana Kampanye Lingkungan
+
+Program Beasiswa dari Yayasan
+
+Sumbangan Pembangunan
+
+Iuran Serikat Buruh
+
+Biaya Operasional PMI
+
+Bantuan Hukum Gratis
+
+Program Pemberdayaan Masyarakat
+
+Dana Riset Lembaga Independen
+
+Biaya Operasional Organisasi Keolahragaan
+
+Sumbangan untuk Seni dan Budaya
+
+Bantuan untuk Kelompok Rentan
+
+Pengeluaran Lembaga Adat"
+3. Pengeluaran Konsumsi Pemerintah (3.a. + 3.b.),"Belanja Pegawai (Gaji ASN/TNI/Polri)
+
+Belanja Barang dan Jasa
+
+Belanja Subsidi (Energi, Pangan, Pupuk)
+
+Program Bantuan Sosial (Bansos)
+
+Anggaran Pendidikan (Dana BOS)
+
+Anggaran Kesehatan (Iuran PBI BPJS)
+
+Belanja Pemeliharaan (Jalan, Gedung)
+
+Belanja Perjalanan Dinas
+
+Pengadaan Alat Tulis Kantor (ATK)
+
+Biaya Operasional Kantor
+
+Belanja Hibah
+
+Penanggulangan Bencana
+
+Penyelenggaraan Pemilu
+
+Belanja Vaksin dan Obat
+
+Program Keluarga Harapan (PKH)
+
+Kartu Prakerja
+
+Dana Desa
+
+Belanja Natura
+
+Anggaran Pertahanan dan Keamanan
+
+Pembayaran Bunga Utang
+
+Belanja Bantuan Luar Negeri
+
+Pengeluaran untuk Pelayanan Publik
+
+Dana Alokasi Umum (DAU)
+
+Dana Alokasi Khusus (DAK)
+
+Belanja tak terduga"
+4. Pembentukan Modal Tetap Bruto (4.a. + 4.b.),
+4.a. Bangunan,"Investasi Properti
+
+Konstruksi Gedung Perkantoran/Pabrik
+
+Pembangunan Proyek Infrastruktur
+
+Pembangunan Perumahan oleh Pengembang
+
+Konstruksi Jalan Tol dan Jembatan
+
+Pembangunan Sekolah/Rumah Sakit
+
+Investasi Gudang dan Logistik
+
+Konstruksi Bandara/Pelabuhan
+
+Pembangunan Jaringan Irigasi
+
+Investasi Real Estat Komersial
+
+Renovasi Besar Aset Tetap
+
+Pembangunan Ruko/Rukan
+
+Investasi Apartemen
+
+Konstruksi Jaringan Listrik/Telekomunikasi
+
+Belanja Modal Pemerintah untuk Konstruksi
+
+Pembangunan Hotel dan Resor
+
+Pembangunan Pasar
+
+Pembangunan Sarana Olahraga
+
+Investasi Perkebunan (Bangunan)
+
+Pertambangan (Bangunan)
+
+Pembangunan Stasiun/Terminal
+
+Izin Mendirikan Bangunan (IMB)
+
+Pertumbuhan Sektor Konstruksi
+
+Investasi Irigasi
+
+Proyek Strategis Nasional (PSN)"
+4.b. Non-Bangunan,"Pembelian Mesin dan Peralatan
+
+Investasi Kendaraan Niaga (Truk, Bus)
+
+Pengadaan Alat Berat
+
+Investasi Teknologi (Komputer, Server)
+
+Pembelian Pesawat oleh Maskapai
+
+Pembelian Kapal oleh Perusahaan Pelayaran
+
+Hak Kekayaan Intelektual (Paten)
+
+Investasi Perangkat Lunak (Software)
+
+Belanja Modal Peralatan Kantor
+
+Mesin Produksi Industri
+
+Pembelian Traktor/Mesin Pertanian
+
+Pengadaan Peralatan Medis
+
+Penambahan Armada Transportasi
+
+Investasi Riset dan Pengembangan (R&D)
+
+Penambahan Ternak Bibit
+
+Penanaman Tumbuhan Keras (Perkebunan)
+
+Belanja Alutsista (Sistem Senjata)
+
+Investasi Peralatan Konstruksi
+
+Perabotan dan Perlengkapan (Non-Rumah Tangga)
+
+Sistem Otomatisasi Industri
+
+Investasi Satelit
+
+Produk Artistik Asli (Film, Musik)
+
+Lisensi dan Waralaba
+
+Eksplorasi Mineral
+
+Mesin Pembangkit Listrik"
+5. Perubahan Inventori,"Stok Barang Dagangan
+
+Persediaan Bahan Baku
+
+Barang Dalam Proses (Setengah Jadi)
+
+Stok Barang Jadi
+
+Penumpukan/Pengurangan Stok
+
+Manajemen Persediaan
+
+Penyesuaian Nilai Inventaris
+
+Stok Akhir Periode
+
+Perputaran Persediaan
+
+Barang Belum Terjual
+
+Cadangan Beras Pemerintah (Bulog)
+
+Stok Minyak Mentah
+
+Persediaan Suku Cadang
+
+Sistem Pencatatan (FIFO/LIFO)
+
+Stok Opname
+
+Akumulasi Inventori
+
+Produksi yang Belum Terjual
+
+Persediaan Bahan Penolong
+
+Inventaris Ritel
+
+Stok Pengaman (Safety Stock)
+
+Inventaris Pertanian
+
+Nilai Buku Persediaan
+
+Penurunan Nilai Persediaan
+
+Persediaan Musiman
+
+Stok Grosir"
+6. Ekspor,"Ekspor Migas/Non-Migas
+
+Ekspor Komoditas (Sawit, Batubara)
+
+Ekspor Tekstil dan Produk Tekstil (TPT)
+
+Pengiriman Barang ke Luar Negeri
+
+Ekspor Furnitur/Alas Kaki
+
+Ekspor Produk Perikanan
+
+Ekspor Otomotif (CBU)
+
+Devisa Hasil Ekspor (DHE)
+
+Surplus Neraca Perdagangan
+
+Pelabuhan Ekspor
+
+Bea Keluar
+
+Letter of Credit (L/C)
+
+Permintaan Pasar Global
+
+Harga Komoditas Dunia
+
+Free on Board (FOB)
+
+Kawasan Ekonomi Khusus (KEK)
+
+Kinerja Ekspor
+
+Negara Tujuan Ekspor
+
+Produk Manufaktur
+
+UMKM Go-Export
+
+Ekspor Jasa (TKI, Pariwisata)
+
+Pemberitahuan Ekspor Barang (PEB)
+
+Atase Perdagangan
+
+Perjanjian Perdagangan Bebas (FTA)
+
+Daya Saing Produk"
+7. Impor,"Impor Migas/Non-Migas
+
+Impor Bahan Baku/Penolong
+
+Impor Barang Modal (Mesin)
+
+Impor Barang Konsumsi
+
+Impor Pangan (Gula, Daging, Gandum)
+
+Pembelian Barang dari Luar Negeri
+
+Impor Komponen Elektronik/Otomotif
+
+Impor Kendaraan (CBU)
+
+Defisit Neraca Perdagangan
+
+Bea Masuk
+
+Pelabuhan Impor
+
+Ketergantungan Impor
+
+Tingkat Komponen Dalam Negeri (TKDN)
+
+Kuota Impor
+
+Cost, Insurance, and Freight (CIF)
+
+Larangan dan Pembatasan (Lartas)
+
+Kurs Valuta Asing
+
+Impor Pakaian Bekas
+
+Bahan Baku Obat
+
+Impor Baja/Besi
+
+Pemberitahuan Impor Barang (PIB)
+
+Impor Jasa
+
+Perusahaan Importir
+
+Arus Masuk Barang
+
+Kebijakan Proteksi"
+(8. Net Ekspor),"Neraca Perdagangan
+
+Surplus Perdagangan
+
+Defisit Perdagangan
+
+Keseimbangan Perdagangan
+
+Kinerja Perdagangan Luar Negeri
+
+Kontribusi terhadap Pertumbuhan Ekonomi
+
+Posisi Perdagangan Internasional
+
+Arus Barang dan Jasa
+
+Daya Saing Global
+
+Kebijakan Ekspor-Impor
+
+Dampak Nilai Tukar (Kurs)
+
+Perang Dagang
+
+Keterbukaan Ekonomi
+
+Neraca Transaksi Berjalan
+
+Cadangan Devisa
+
+Perekonomian Terbuka
+
+Tekanan Eksternal
+
+Volatilitas Harga Komoditas
+
+Hambatan Tarif dan Non-Tarif
+
+Permintaan Domestik vs Global
+
+Mitra Dagang Utama
+
+Arus Modal
+
+Penopang PDRB
+
+Neraca Jasa
+
+Keseimbangan Eksternal"
