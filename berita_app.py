@@ -96,7 +96,7 @@ start_date = st.sidebar.date_input("Tanggal Mulai", value=datetime(2025, 8, 1))
 end_date = st.sidebar.date_input("Tanggal Akhir", value=datetime(2025, 8, 31))
 
 max_pages = st.sidebar.slider(
-    "Halaman Maksimal:", min_value=1, max_value=50, value=5,
+    "Halaman Maksimal:", min_value=1, max_value=100, value=5,
     help="Jumlah halaman maksimum yang akan di-scrape."
 )
 
