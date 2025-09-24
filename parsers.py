@@ -362,20 +362,19 @@ def parse_hariankepri(keyword=None, start_date=None, end_date=None, max_pages=10
     print(f"✅ Total artikel Harian Kepri berhasil diambil: {len(results)}")
     return results
 
-# --- Parser for Seputar Kita ---
+# --- Parser for Seputar Kita (REVISED) ---
 def parse_seputarkita(keyword="tanjungpinang", start_date=None, end_date=None, max_pages=10):
     results = []
-    # Situs ini menggunakan query pencarian, bukan kategori halaman
-    base_url = f"https://www.seputarkita.id/search?q={keyword}&page="
+    # FIXED: Menggunakan domain .co dan struktur URL search dari notebook
+    base_url = f"https://www.seputarkita.co/search/{keyword}/page/"
 
-    # Mapping bulan dari Bahasa Indonesia ke angka
     month_map = {
         'Januari': 1, 'Februari': 2, 'Maret': 3, 'April': 4, 'Mei': 5, 'Juni': 6,
         'Juli': 7, 'Agustus': 8, 'September': 9, 'Oktober': 10, 'November': 11, 'Desember': 12
     }
 
     for page in range(1, max_pages + 1):
-        url = f"{base_url}{page}"
+        url = f"{base_url}{page}/"
         print(f"🔎 Mengambil halaman Seputar Kita: {url}")
         soup = get_content(url)
         if not soup:
@@ -392,14 +391,11 @@ def parse_seputarkita(keyword="tanjungpinang", start_date=None, end_date=None, m
                 continue
 
             link = title_tag['href']
-            
-            # Ekstrak tanggal dari halaman daftar
             date_tag = article.find('span', class_='post-date')
             tanggal = None
             if date_tag:
-                # Contoh format: "Sabtu, 23 September 2025"
                 try:
-                    date_parts = date_tag.get_text(strip=True).split(', ')[1].split() # -> ['23', 'September', '2025']
+                    date_parts = date_tag.get_text(strip=True).split(', ')[1].split()
                     if len(date_parts) == 3:
                         day = int(date_parts[0])
                         month = month_map[date_parts[1]]
@@ -409,7 +405,6 @@ def parse_seputarkita(keyword="tanjungpinang", start_date=None, end_date=None, m
                     print(f"[TANGGAL ERROR] {e}")
                     continue
             
-            # Filter tanggal
             if start_date and end_date:
                 if tanggal is None or not (start_date <= tanggal <= end_date):
                     print(f"⏩ Lewat (tanggal tidak sesuai): {tanggal}")
@@ -424,29 +419,19 @@ def parse_seputarkita(keyword="tanjungpinang", start_date=None, end_date=None, m
             content_div = detail_soup.find('div', class_='post-content')
             isi = ""
             if content_div:
-                # Hapus div 'baca-juga' yang sering ada di tengah artikel
                 for related_box in content_div.find_all('div', class_='baca-juga'):
                     related_box.decompose()
-                
-                paragraphs = content_div.find_all('p')
-                isi = " ".join(p.get_text(strip=True) for p in paragraphs)
+                isi = " ".join(p.get_text(strip=True) for p in content_div.find_all('p'))
 
             print(f"📅 Tanggal: {tanggal}")
             print(f"📛 Judul: {judul}")
-
-            results.append({
-                "judul": judul,
-                "link": link,
-                "tanggal": tanggal,
-                "isi": isi
-            })
+            results.append({"judul": judul, "link": link, "tanggal": tanggal, "isi": isi})
             time.sleep(0.5)
 
     print(f"✅ Total artikel Seputar Kita berhasil diambil: {len(results)}")
     return results
 
-
-# --- Parser for Zona Kepri ---
+# --- Parser for Zona Kepri (REVISED & VERIFIED) ---
 def parse_zonakepri(keyword=None, start_date=None, end_date=None, max_pages=10):
     results = []
     base_url = "https://www.zonakepri.com/category/tanjung-pinang/page/"
@@ -458,13 +443,17 @@ def parse_zonakepri(keyword=None, start_date=None, end_date=None, max_pages=10):
         if not soup:
             continue
 
-        articles = soup.find_all('div', class_='td-module-thumb')
+        # Menggunakan selector yang lebih spesifik sesuai notebook
+        articles = soup.select('div.td_module_10, div.td_module_12')
         if not articles:
             print("Tidak ada artikel lagi ditemukan. Berhenti.")
             break
 
         for i, article in enumerate(articles):
-            link_tag = article.find('a')
+            thumb_div = article.find('div', class_='td-module-thumb')
+            if not thumb_div:
+                continue
+            link_tag = thumb_div.find('a')
             if not link_tag:
                 continue
             
@@ -475,7 +464,6 @@ def parse_zonakepri(keyword=None, start_date=None, end_date=None, max_pages=10):
             if not detail_soup:
                 continue
 
-            # Ekstrak tanggal
             date_tag = detail_soup.find('time', class_='entry-date')
             tanggal = None
             if date_tag and date_tag.get('datetime'):
@@ -486,7 +474,6 @@ def parse_zonakepri(keyword=None, start_date=None, end_date=None, max_pages=10):
                     print(f"[TANGGAL ERROR] {e}")
                     continue
             
-            # Filter tanggal
             if start_date and end_date:
                 if tanggal is None or not (start_date <= tanggal <= end_date):
                     print(f"⏩ Lewat (tanggal tidak sesuai): {tanggal}")
@@ -496,25 +483,17 @@ def parse_zonakepri(keyword=None, start_date=None, end_date=None, max_pages=10):
             content_div = detail_soup.find('div', class_='td-post-content')
             isi = ""
             if content_div:
-                paragraphs = content_div.find_all('p')
-                isi = " ".join(p.get_text(strip=True) for p in paragraphs)
+                isi = " ".join(p.get_text(strip=True) for p in content_div.find_all('p'))
 
             print(f"📅 Tanggal: {tanggal}")
             print(f"📛 Judul: {judul}")
-
-            results.append({
-                "judul": judul,
-                "link": link,
-                "tanggal": tanggal,
-                "isi": isi
-            })
+            results.append({"judul": judul, "link": link, "tanggal": tanggal, "isi": isi})
             time.sleep(0.5)
 
     print(f"✅ Total artikel Zona Kepri berhasil diambil: {len(results)}")
     return results
 
-
-# --- Parser for Ulasan ---
+# --- Parser for Ulasan (REVISED) ---
 def parse_ulasan(keyword=None, start_date=None, end_date=None, max_pages=10):
     results = []
     base_url = "https://www.ulasan.co/category/ulasan-tanjungpinang/page/"
@@ -526,6 +505,7 @@ def parse_ulasan(keyword=None, start_date=None, end_date=None, max_pages=10):
         if not soup:
             continue
 
+        # Selector dari notebook sudah tepat
         articles = soup.find_all('article')
         if not articles:
             print("Tidak ada artikel lagi ditemukan. Berhenti.")
@@ -543,7 +523,6 @@ def parse_ulasan(keyword=None, start_date=None, end_date=None, max_pages=10):
             if not detail_soup:
                 continue
 
-            # Ekstrak tanggal
             date_tag = detail_soup.find('time', class_='entry-date')
             tanggal = None
             if date_tag and date_tag.get('datetime'):
@@ -554,7 +533,6 @@ def parse_ulasan(keyword=None, start_date=None, end_date=None, max_pages=10):
                     print(f"[TANGGAL ERROR] {e}")
                     continue
             
-            # Filter tanggal
             if start_date and end_date:
                 if tanggal is None or not (start_date <= tanggal <= end_date):
                     print(f"⏩ Lewat (tanggal tidak sesuai): {tanggal}")
@@ -564,30 +542,22 @@ def parse_ulasan(keyword=None, start_date=None, end_date=None, max_pages=10):
             content_div = detail_soup.find('div', class_='entry-content')
             isi = ""
             if content_div:
-                paragraphs = content_div.find_all('p')
-                isi = " ".join(p.get_text(strip=True) for p in paragraphs)
+                isi = " ".join(p.get_text(strip=True) for p in content_div.find_all('p'))
 
             print(f"📅 Tanggal: {tanggal}")
             print(f"📛 Judul: {judul}")
-
-            results.append({
-                "judul": judul,
-                "link": link,
-                "tanggal": tanggal,
-                "isi": isi
-            })
+            results.append({"judul": judul, "link": link, "tanggal": tanggal, "isi": isi})
             time.sleep(0.5)
 
     print(f"✅ Total artikel Ulasan.co berhasil diambil: {len(results)}")
     return results
 
-
-# --- Parser for Batampos ---
+# --- Parser for Batampos (REVISED) ---
 def parse_batampos(keyword=None, start_date=None, end_date=None, max_pages=10):
     results = []
-    base_url = "https://batampos.jawapos.com/tanjungpinang/page/"
+    # FIXED: Menggunakan domain .co.id dan struktur URL dari notebook
+    base_url = "https://batampos.co.id/category/tanjungpinang/page/"
     
-    # Mapping bulan dari Bahasa Indonesia ke angka
     month_map = {
         'Januari': 1, 'Februari': 2, 'Maret': 3, 'April': 4, 'Mei': 5, 'Juni': 6,
         'Juli': 7, 'Agustus': 8, 'September': 9, 'Oktober': 10, 'November': 11, 'Desember': 12
@@ -600,8 +570,6 @@ def parse_batampos(keyword=None, start_date=None, end_date=None, max_pages=10):
         if not soup:
             continue
 
-        # Batampos tidak memberikan sinyal 'halaman tidak ditemukan' yang jelas,
-        # jadi kita cek apakah ada artikel. Jika tidak, kita berhenti.
         articles = soup.find_all('div', class_='item-post')
         if not articles:
             print("Tidak ada artikel lagi ditemukan. Berhenti.")
@@ -619,13 +587,11 @@ def parse_batampos(keyword=None, start_date=None, end_date=None, max_pages=10):
             if not detail_soup:
                 continue
 
-            # Ekstrak tanggal
             date_tag = detail_soup.find('div', class_='post-date')
             tanggal = None
             if date_tag:
-                # Contoh: "Selasa, 23 September 2025 08:30"
                 try:
-                    date_parts = date_tag.get_text(strip=True).split(', ')[1].split() # -> ['23', 'September', '2025', '08:30']
+                    date_parts = date_tag.get_text(strip=True).split(', ')[1].split()
                     if len(date_parts) >= 3:
                         day = int(date_parts[0])
                         month = month_map[date_parts[1]]
@@ -635,7 +601,6 @@ def parse_batampos(keyword=None, start_date=None, end_date=None, max_pages=10):
                     print(f"[TANGGAL ERROR] {e}")
                     continue
             
-            # Filter tanggal
             if start_date and end_date:
                 if tanggal is None or not (start_date <= tanggal <= end_date):
                     print(f"⏩ Lewat (tanggal tidak sesuai): {tanggal}")
@@ -645,22 +610,13 @@ def parse_batampos(keyword=None, start_date=None, end_date=None, max_pages=10):
             content_div = detail_soup.find('div', id='font-switcher')
             isi = ""
             if content_div:
-                # Hapus elemen yang tidak diinginkan
-                for unwanted in content_div.select('div.baca-juga, div.shared-social, script, style'):
+                for unwanted in content_div.select('div.baca-juga, div.shared-social, script, style, .reporter, .editor'):
                     unwanted.decompose()
-                
-                paragraphs = content_div.find_all('p')
-                isi = " ".join(p.get_text(strip=True) for p in paragraphs)
+                isi = " ".join(p.get_text(strip=True) for p in content_div.find_all('p'))
 
             print(f"📅 Tanggal: {tanggal}")
             print(f"📛 Judul: {judul}")
-
-            results.append({
-                "judul": judul,
-                "link": link,
-                "tanggal": tanggal,
-                "isi": isi
-            })
+            results.append({"judul": judul, "link": link, "tanggal": tanggal, "isi": isi})
             time.sleep(0.5)
 
     print(f"✅ Total artikel Batampos berhasil diambil: {len(results)}")
