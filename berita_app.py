@@ -1,152 +1,122 @@
 import streamlit as st
 import pandas as pd
 from datetime import datetime
-import re # Modul untuk regular expression
+import re
+from collections import Counter
 from parsers import (
-    parse_presmedia,
-    parse_sketsanews,
-    parse_vnews,
-    parse_kepripedia,
-    parse_hariankepri,
-    parse_seputarkita,
-    parse_zonakepri,
-    parse_ulasan,
-    parse_batampos
+    parse_presmedia, parse_sketsanews, parse_vnews,
+    parse_kepripedia, parse_hariankepri, parse_seputarkita,
+    parse_zonakepri, parse_ulasan, parse_batampos
 )
 
 # --- UI Configuration ---
 st.set_page_config(page_title="Scraper & Kategorisasi Berita", layout="wide")
-st.title("📡 Scraper & Kategorisasi Berita PDRB")
-st.markdown("Aplikasi untuk mengambil dan mengkategorikan data berita dari berbagai portal berita di Kepulauan Riau.")
+st.title("📡 Scraper & Kategorisasi Berita PDRB Multi-Label")
+st.markdown("Aplikasi untuk mengambil berita dan mengklasifikasikannya ke dalam beberapa kategori PDRB spesifik.")
 
-# --- Helper Functions for Categorization ---
+# --- Helper Functions for New Categorization Logic ---
 
-@st.cache_data # Cache data agar tidak perlu load file berulang kali
-def load_kategori_pdrb():
+@st.cache_data
+def load_and_process_categories():
     """
-    Memuat dan memproses file CSV untuk kategori PDRB.
-    Mengembalikan dua dictionary, satu untuk produksi dan satu untuk pengeluaran.
+    Memuat kategori dan kata kunci dari file Produksi.csv dan Pengeluaran.csv.
+    Menggabungkan keduanya menjadi satu dictionary.
     """
+    all_categories = {}
     try:
-        # Load data dari file CSV yang diunggah
-        df_produksi = pd.read_csv("Produksi.csv", header=2)
-        df_pengeluaran = pd.read_csv("Pengeluaran.csv", header=2)
+        # Muat kedua file CSV
+        df_produksi = pd.read_csv("Produksi.csv")
+        df_pengeluaran = pd.read_csv("Pengeluaran.csv")
+        
+        # Gabungkan kedua DataFrame
+        df_combined = pd.concat([df_produksi, df_pengeluaran], ignore_index=True)
 
-        # Proses Kategori Produksi
-        kategori_produksi = {}
-        current_category = ''
-        for _, row in df_produksi.iterrows():
-            # Jika kolom 'Kategori' berisi nilai (misal: 'A', 'B'), itu adalah kategori utama
-            if pd.notna(row['Kategori']):
-                current_category = row['Uraian']
-            # Jika kolom 'Uraian' ada isinya, itu adalah sub-kategori
-            elif pd.notna(row['Uraian']):
-                # Membersihkan uraian dari nomor atau huruf di depannya
-                uraian = re.sub(r'^[a-z]\.\s*|^[0-9]+\s*|\s*,\s*$', '', str(row['Uraian'])).strip()
-                # Menggunakan uraian sebagai kata kunci (disederhanakan)
-                # Contoh: "Industri Makanan dan Minuman" -> ['industri', 'makanan', 'minuman']
-                keywords = [word.lower() for word in re.split(r'[\s,]+', uraian) if len(word) > 3]
-                kategori_produksi[uraian] = {
-                    'kategori_utama': current_category,
-                    'keywords': list(set(keywords)) # Hilangkan duplikat
-                }
+        for _, row in df_combined.iterrows():
+            # Pastikan ada nilai di kolom Kategori dan Uraian
+            if pd.notna(row['Kategori']) and pd.notna(row['Uraian']):
+                kategori = str(row['Kategori']).strip()
+                # Uraian berisi keywords yang dipisahkan oleh newline
+                # Bersihkan setiap keyword: lowercase, hapus spasi, dan filter kata pendek
+                keywords = [
+                    re.sub(r'[^a-z0-9\s]', '', word.lower().strip())
+                    for word in str(row['Uraian']).split('\n')
+                    if len(word.strip()) > 2
+                ]
+                # Hindari duplikat keywords
+                all_categories[kategori] = list(set(keywords))
+        
+        return all_categories
 
-        # Proses Kategori Pengeluaran
-        kategori_pengeluaran = {}
-        for _, row in df_pengeluaran.iterrows():
-            if pd.notna(row['Uraian']):
-                uraian = re.sub(r'^[0-9]\.[a-z]\.\s*|^[0-9]\.\s*', '', str(row['Uraian'])).strip()
-                # Membersihkan dan mengambil kata kunci dari uraian
-                # Contoh: "Pakaian" atau "Transportasi/Angkutan"
-                cleaned_uraian = re.sub(r'\(.*\)|/', ' ', uraian) # Hapus kurung dan slash
-                keywords = [word.lower() for word in re.split(r'[\s,]+', cleaned_uraian) if len(word) > 3]
-                kategori_pengeluaran[uraian] = list(set(keywords))
+    except FileNotFoundError as e:
+        st.error(f"❌ File tidak ditemukan: {e.filename}. Pastikan 'Produksi.csv' dan 'Pengeluaran.csv' ada di direktori yang sama.")
+        return None
+    except Exception as e:
+        st.error(f"Terjadi kesalahan saat memuat file kategori: {e}")
+        return None
 
-        return kategori_produksi, kategori_pengeluaran
-
-    except FileNotFoundError:
-        st.error("File CSV 'PRODUKSI.csv' atau 'PENGELUARAN.csv' tidak ditemukan. Pastikan file ada di direktori yang sama.")
-        return None, None
-
-def classify_article(text, categories, classification_type):
+def classify_article_multi_label(text, categories):
     """
-    Mengklasifikasikan teks artikel berdasarkan kata kunci dari kategori yang diberikan.
+    Mengklasifikasikan teks artikel ke dalam maksimal 3 kategori teratas.
     """
     if not isinstance(text, str) or not categories:
-        return "Tidak Terkategori"
+        return ["Bukan Kategori PDRB"]
 
     text_lower = text.lower()
+    scores = Counter()
+
+    # Hitung skor untuk setiap kategori berdasarkan jumlah keyword yang cocok
+    for category, keywords in categories.items():
+        for keyword in keywords:
+            # Menggunakan word boundary (\b) agar tidak salah cocok (misal: 'emas' di dalam 'kemasan')
+            if re.search(r'\b' + re.escape(keyword) + r'\b', text_lower):
+                scores[category] += 1
     
-    # Skor untuk setiap kategori
-    scores = {kategori: 0 for kategori in categories.keys()}
+    # Jika tidak ada keyword yang cocok sama sekali
+    if not scores:
+        return ["Bukan Kategori PDRB"]
 
-    if classification_type == "Produksi":
-        for kategori, data in categories.items():
-            for keyword in data['keywords']:
-                if keyword in text_lower:
-                    scores[kategori] += 1
-    else: # Pengeluaran
-        for kategori, keywords in categories.items():
-            for keyword in keywords:
-                if keyword in text_lower:
-                    scores[kategori] += 1
+    # Urutkan kategori berdasarkan skor tertinggi dan ambil top 3
+    top_categories = [category for category, count in scores.most_common(3)]
     
-    # Cari kategori dengan skor tertinggi
-    max_score = 0
-    best_category = "Tidak Terkategori"
-    for kategori, score in scores.items():
-        if score > max_score:
-            max_score = score
-            best_category = kategori
+    return top_categories
 
-    return best_category
-
-
-# --- Load Kategori ---
-kategori_produksi, kategori_pengeluaran = load_kategori_pdrb()
-
+# --- Load Categories ---
+all_pdrb_categories = load_and_process_categories()
 
 # --- Sidebar Inputs ---
 st.sidebar.header("⚙️ Konfigurasi Scraper")
 
-# Choose portal
 portal = st.sidebar.selectbox(
     "📰 Pilih Portal Berita:",
     ["Presmedia", "Sketsa News", "Vision News", "KepriPedia", "Harian Kepri", "Seputar Kita", "Zona Kepri", "Ulasan", "Batampos"]
 )
 
-# Date Range
 st.sidebar.subheader("🗓️ Filter Tanggal")
 start_date = st.sidebar.date_input("Tanggal Mulai", value=datetime(2025, 8, 1))
 end_date = st.sidebar.date_input("Tanggal Akhir", value=datetime(2025, 8, 31))
 
-# Max Pages
 max_pages = st.sidebar.slider(
     "Halaman Maksimal:", min_value=1, max_value=50, value=5,
     help="Jumlah halaman maksimum yang akan di-scrape."
 )
 
-# ✅ NEW: Categorization Selection
 st.sidebar.subheader("📊 Kategorisasi PDRB")
-kategori_pilihan = st.sidebar.selectbox(
-    "Pilih Jenis Kategorisasi:",
-    ["Tanpa Kategorisasi", "PDRB Produksi", "PDRB Pengeluaran"],
-    help="Pilih untuk mengklasifikasikan berita ke dalam kategori PDRB."
+do_classification = st.sidebar.toggle(
+    'Aktifkan Kategorisasi Otomatis', value=True,
+    help="Jika aktif, setiap berita akan diklasifikasikan ke dalam kategori PDRB."
 )
 
-# Action Button
-if st.sidebar.button("🚀 Mulai Scraping & Kategorisasi"):
+# --- Action Button ---
+if st.sidebar.button("🚀 Mulai Proses"):
     if start_date > end_date:
         st.error("❌ Error: Tanggal mulai tidak boleh melebihi tanggal akhir.")
     else:
         with st.spinner(f"Mengambil berita dari **{portal}**... Mohon tunggu ⏳"):
-            
             parser_map = {
                 "Presmedia": parse_presmedia, "Sketsa News": parse_sketsanews, "Vision News": parse_vnews,
                 "KepriPedia": parse_kepripedia, "Harian Kepri": parse_hariankepri, "Seputar Kita": parse_seputarkita,
                 "Zona Kepri": parse_zonakepri, "Ulasan": parse_ulasan, "Batampos": parse_batampos
             }
-
             parse_function = parser_map.get(portal)
             hasil = parse_function(keyword=None, start_date=start_date, end_date=end_date, max_pages=max_pages) if parse_function else []
 
@@ -155,23 +125,25 @@ if st.sidebar.button("🚀 Mulai Scraping & Kategorisasi"):
             else:
                 df = pd.DataFrame(hasil)
                 
-                # --- Categorization Logic ---
-                if kategori_pilihan != "Tanpa Kategorisasi" and (kategori_produksi and kategori_pengeluaran):
-                    st.info(f"Melakukan kategorisasi berdasarkan **{kategori_pilihan}**...")
-                    if kategori_pilihan == "PDRB Produksi":
-                        df['kategori_pdrb'] = df['isi'].apply(lambda x: classify_article(x, kategori_produksi, "Produksi"))
-                    elif kategori_pilihan == "PDRB Pengeluaran":
-                        df['kategori_pdrb'] = df['isi'].apply(lambda x: classify_article(x, kategori_pengeluaran, "Pengeluaran"))
+                # --- New Multi-Label Categorization Logic ---
+                if do_classification and all_pdrb_categories:
+                    st.info("Melakukan klasifikasi multi-label...")
                     
-                    # Reorder columns to show category first
-                    cols = ['kategori_pdrb', 'tanggal', 'judul', 'isi', 'link']
-                    df = df[[col for col in cols if col in df.columns]]
+                    # Terapkan fungsi klasifikasi
+                    kategori_list = df['isi'].apply(lambda x: classify_article_multi_label(x, all_pdrb_categories))
+                    
+                    # Buat kolom baru dari hasil klasifikasi (maksimal 3)
+                    kategori_df = pd.DataFrame(kategori_list.tolist(), index=kategori_list.index).fillna('')
+                    for i in range(3):
+                        col_name = f'Kategori {i+1}'
+                        df[col_name] = kategori_df[i] if i in kategori_df.columns else ''
 
+                    # Susun ulang urutan kolom
+                    df = df[['Kategori 1', 'Kategori 2', 'Kategori 3', 'tanggal', 'judul', 'isi', 'link']]
                 else:
-                    # Default column order if no categorization
                     df = df[['tanggal', 'judul', 'isi', 'link']]
 
-                st.success(f"✅ Berhasil mengambil **{len(df)}** artikel.")
+                st.success(f"✅ Berhasil memproses **{len(df)}** artikel.")
                 st.dataframe(df, use_container_width=True)
 
                 # --- Download Button ---
@@ -181,7 +153,6 @@ if st.sidebar.button("🚀 Mulai Scraping & Kategorisasi"):
 
                 excel_data = convert_df_to_excel(df)
                 file_name = f"{portal.lower().replace(' ', '_')}_{start_date}_to_{end_date}.xlsx"
-                
                 st.download_button(
                     label="📥 Download Hasil sebagai Excel",
                     data=excel_data,
@@ -193,8 +164,7 @@ if st.sidebar.button("🚀 Mulai Scraping & Kategorisasi"):
 st.sidebar.markdown("---")
 st.sidebar.info(
     "**Cara Penggunaan:**\n"
-    "1. Pilih portal berita.\n"
-    "2. Atur rentang tanggal & halaman.\n"
-    "3. **Pilih jenis kategorisasi PDRB** (opsional).\n"
-    "4. Klik tombol 'Mulai'."
+    "1. Pilih portal berita & atur filter.\n"
+    "2. Pastikan toggle **'Aktifkan Kategorisasi'** menyala jika ingin mengklasifikasikan berita.\n"
+    "3. Klik tombol **'Mulai Proses'**."
 )
